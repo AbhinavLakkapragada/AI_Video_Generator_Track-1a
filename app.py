@@ -66,5 +66,5 @@ interface = gr.Interface(
     description="Upload a video file to generate a caption and an AI-generated video."
 )
 
-# Launch the interface
-interface.launch()
+# Launch the interface in Colab
+interface.launch(debug=True, share=True)  # Set share=True for external access if needed
