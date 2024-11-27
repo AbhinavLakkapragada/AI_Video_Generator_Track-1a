@@ -9,6 +9,33 @@ A Gradio-based application that combines video captioning and AI video generatio
 - Generate an AI-created video based on the caption.
 - View the input video, AI-generated video, and caption side-by-side in a user-friendly interface.
 
+## Platform Used: Google Colab with T4 GPU
+
+This application requires significant computational resources, as the text-to-video-synthesis model cannot run on standard laptop CPUs. It has been tested and verified on Google Colab using the T4 GPU runtime. To replicate the results, ensure the runtime is set to GPU under Runtime > Change runtime type.
+
+## Models Used
+
+This project utilizes the following state-of-the-art models for video captioning and AI-generated video synthesis:
+
+1. BLIP Image Captioning Model:
+
+- Description:
+    BLIP (Bootstrapping Language-Image Pretraining) is a model designed for tasks like image captioning and visual question answering. It generates natural language descriptions of images with high accuracy. In this project, BLIP is used to generate a textual caption from the first frame of the uploaded video.
+- Model Details:
+    Name: Salesforce/blip-image-captioning-base
+    Framework: Hugging Face Transformers
+- Link: https://huggingface.co/Salesforce/blip-image-captioning-large
+
+2. Text-to-Video Synthesis Model:
+
+- Description:
+    This model from modelscope takes text descriptions as input and generates corresponding video sequences. It is a cutting-edge model that leverages multimodal learning for generating synthetic videos from textual prompts. In this project, it generates an AI video based on the caption produced by the BLIP model.
+- Model Details:
+    Name: damo/text-to-video-synthesis
+    Framework: ModelScope
+- Link: https://huggingface.co/ali-vilab/modelscope-damo-text-to-video-synthesis
+
+
 ## Setup Instructions
 
 1. Clone this repository:
@@ -45,7 +72,6 @@ pip install open_clip_torch==2.24.0
 ```bash
 python app.py
 ```
-4. Open the provided URL in your browser to access the Gradio interface.
 
 ## How to Use
 
@@ -60,8 +86,14 @@ python app.py
 - Right: AI-generated video.
 - Below: Caption displayed in a text box.
 
+## Inputs
+
+The input videos are from the sample synthetic videos.
+
 ## Expected Outputs
 
 - Input Video: The original video uploaded by the user.
 - Generated Caption: A descriptive textual summary of the input video.
 - Generated Video: An AI-rendered video created based on the caption.
+
+## Demo
