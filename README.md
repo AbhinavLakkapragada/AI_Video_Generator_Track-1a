@@ -11,20 +11,29 @@ A Gradio-based application that combines video captioning and AI video generatio
 -Generate an AI-created video based on the caption.
 -View the input video, AI-generated video, and caption side-by-side in a user-friendly interface.
 
+
 ## Setup Instructions
 
 1. Clone this repository:
-   '''bash
-   git clone https://github.com/<your-username>/<repository-name>.git
-   cd <repository-name>
 
-3. Install the required dependencies:
-   pip install -r requirements.txt
+```bash
+  git clone https://github.com/AbhinavLakkapragada/AI_Video_Generator_Track-1a.git
+  cd AI_Video_Generator_Track-1a
 
-4. Run the application:
-   python app.py
+```
 
-5. Access the Gradio interface through the provided URL in your terminal.
+2. Install the required dependencies:
+
+```bash
+  pip install -r requirements.txt
+```
+
+3. Run the application:
+
+```bash
+  python app.py
+```
+4. Open the provided URL in your browser to access the Gradio interface.
 
 ## How to Use
 
