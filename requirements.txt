@@ -1,0 +1,6 @@
+gradio==3.18.0
+transformers
+modelscope==1.4.2
+pytorch-lightning
+open_clip_torch==2.24.0
+opencv-python
