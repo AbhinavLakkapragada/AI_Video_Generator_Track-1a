@@ -67,10 +67,10 @@ pip install pytorch-lightning
 pip install open_clip_torch==2.24.0
 ```
 
-3. Run the application:
+3. Run the application (running on collab requires !python instead of python):
 
 ```bash
-python app.py
+!python app.py
 ```
 
 ## How to Use
