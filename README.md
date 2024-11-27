@@ -1,7 +1,5 @@
 # Video Captioning and AI Video Generation
 
-## Project Description
-
 A Gradio-based application that combines video captioning and AI video generation. This project processes an input video, generates a descriptive caption using the BLIP model, and creates a new AI video based on the caption using the ModelScope text-to-video synthesis pipeline.
 
 ## Features
@@ -38,16 +36,18 @@ A Gradio-based application that combines video captioning and AI video generatio
 ## How to Use
 
 1. Launch the application and upload a video file (e.g., .mp4 format).
+
 2. The app will process the video to:
-    -Generate a caption.
-    -Create an AI video based on the caption.
+- Generate a caption.
+- Create an AI video based on the caption.
+
 3. View the results in the interface:
-    -Left: Input video.
-    -Right: AI-generated video.
-    -Below: Caption displayed in a text box.
+- Left: Input video.
+- Right: AI-generated video.
+- Below: Caption displayed in a text box.
 
 ## Expected Outputs
 
--Input Video: The original video uploaded by the user.
--Generated Video: An AI-rendered video created based on the caption.
--Generated Caption: A descriptive textual summary of the input video.
+- Input Video: The original video uploaded by the user.
+- Generated Caption: A descriptive textual summary of the input video.
+- Generated Video: An AI-rendered video created based on the caption.
