@@ -4,11 +4,10 @@ A Gradio-based application that combines video captioning and AI video generatio
 
 ## Features
 
--Upload a video file for processing.
--Extract a meaningful caption from the input video.
--Generate an AI-created video based on the caption.
--View the input video, AI-generated video, and caption side-by-side in a user-friendly interface.
-
+- Upload a video file for processing.
+- Extract a meaningful caption from the input video.
+- Generate an AI-created video based on the caption.
+- View the input video, AI-generated video, and caption side-by-side in a user-friendly interface.
 
 ## Setup Instructions
 
