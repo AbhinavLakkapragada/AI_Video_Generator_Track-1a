@@ -25,6 +25,21 @@ cd AI_Video_Generator_Track-1a
 pip install -r requirements.txt
 ```
 
+or install them manually if the above is not working:
+
+```bash
+pip install gradio
+```
+```bash
+pip install modelscope==1.4.2
+```
+```bash
+pip install pytorch-lightning
+```
+```bash
+pip install open_clip_torch==2.24.0
+```
+
 3. Run the application:
 
 ```bash
