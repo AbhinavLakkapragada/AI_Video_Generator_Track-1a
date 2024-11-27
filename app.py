@@ -56,7 +56,7 @@ def gradio_app(video_file):
 # Gradio interface
 interface = gr.Interface(
     fn=gradio_app,
-    inputs=gr.File(type="filepath"),  # Single video upload
+    inputs=gr.File(type="file"),  # Single video upload
     outputs=[
         gr.Video(label="Input Video"),  # Display input video
         gr.Video(label="AI-Generated Video"),  # Display AI-generated video
