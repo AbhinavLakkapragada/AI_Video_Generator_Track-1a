@@ -1,6 +1,4 @@
-# Project Name
-
-Video Captioning and AI Video Generation
+# Video Captioning and AI Video Generation
 
 ## Project Description
 
