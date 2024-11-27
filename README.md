@@ -97,3 +97,5 @@ The input videos are from the sample synthetic videos.
 - Generated Video: An AI-rendered video created based on the caption.
 
 ## Demo
+
+- Link: https://youtu.be/PaYxaAB5FWA
