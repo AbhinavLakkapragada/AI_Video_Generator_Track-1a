@@ -53,18 +53,16 @@ def gradio_app(video_file):
 
     return video_file.name, ai_video_path, caption
 
-# Gradio interface
-interface = gr.Interface(
+# Launch the Gradio interface
+gr.Interface(
     fn=gradio_app,
     inputs=gr.File(type="file"),  # Single video upload
     outputs=[
-        gr.Video(label="Input Video"),  # Display input video
-        gr.Video(label="AI-Generated Video"),  # Display AI-generated video
-        gr.Textbox(label="Generated Caption"),  # Display caption
+        gr.Video(label="Uploaded Video"),  # Display the uploaded video
+        gr.Video(label="AI Generated Video"),  # Display the AI-generated video
+        gr.Textbox(label="Generated Caption")  # Display the generated caption
     ],
-    title="Video Captioning and AI Video Generation",
-    description="Upload a video file to generate a caption and an AI-generated video."
-)
+    title="Single Video Captioning and AI Video Generation",
+    description="Upload a video to generate a caption and an AI-synthesized video."
+).launch(share=True)  # Enable public link
 
-# Launch the interface
-interface.launch()
